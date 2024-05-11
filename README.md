@@ -9,10 +9,10 @@ The RideShareApplication is a simple Java application designed to connect cab dr
 - Java Runtime Environment (JRE) 8 or later.
 - An IDE platform to run the application
 
-### Setup and Running the Application
-## Setup
+## Setup and Running the Application
+### Setup
 No installation is necessary. Ensure you have Java installed on your machine and an IDE to run the code. Download the `RideShare.zip` file to a convenient location on your computer. Unzip and import the project into the IDE. Build the project to compile the dependencies and code.
-## Running the Application
+### Running the Application
 To run the application, open the file RideShareApplication.java located under 'src/main/java/org/roux/rideshare/' and run this file.
 
 ## Usage
