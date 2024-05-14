@@ -1,6 +1,8 @@
 package org.roux.rideshare.model;
 
 import javafx.animation.PathTransition;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
@@ -18,7 +20,7 @@ import java.util.List;
 public class Cab {
     private boolean isFull;
     private Pane mapPane;
-    private Circle carSymbol;
+    private ImageView carSymbol;
     private List<Passenger> passengers;
     private PathTransition route;
 
@@ -39,7 +41,10 @@ public class Cab {
      * Initializes the car symbol on the {@link Pane} of the graph.
      */
     public void setupCar() {
-        carSymbol = new Circle(5, Color.RED);
+        Image carImage = new Image("file:src/main/resources/org/roux/rideshare/Designer.png");
+        carSymbol = new ImageView(carImage);//new Circle(5, Color.RED);
+        carSymbol.setFitHeight(35);
+        carSymbol.setFitWidth(35);
         mapPane.getChildren().add(carSymbol);
         carSymbol.setVisible(false);
     }
@@ -85,7 +90,7 @@ public class Cab {
      *
      * @return {@link Circle} symbol of car
      */
-    public Circle getCarSymbol() {
+    public ImageView getCarSymbol() {
         return carSymbol;
     }
 
